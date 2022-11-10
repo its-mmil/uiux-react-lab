@@ -1,4 +1,3 @@
-// TODO: create a component that displays a single bakery item
 function BakeryItem({name,price,image,description, addToCart}) {
     return (
         <div className="bakery-item" onClick={() => addToCart(name, price)}>

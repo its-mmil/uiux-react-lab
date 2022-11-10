@@ -10,8 +10,6 @@ bakeryData.forEach((item) => {
 /* ############################################################## */
 
 function App() {
-  // TODO: use useState to create a state variable to hold the state of the cart
-  /* add your cart state code here */
   const [cart, setCart] = useState(new Map([]));
 
   const addToCart = (name, price) => {
@@ -33,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
+      <h1>My Bakery</h1>
       <div id = "columns">
         <div id="items">
           {bakeryData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
@@ -45,7 +43,7 @@ function App() {
         <div id="cart">
           <h2 id="cart-header">Cart</h2>
           <ul>
-          {/* TODO: render a list of items in the cart */
+          {
           Array.from(cart.keys()).map((name) =>  
             <li>{name} - {cart.get(name).amount}</li>
           )}
