@@ -1,9 +1,45 @@
 /* Add styling for your page here */
 
-.App {
-
+#columns {
+    display: flex;
+    
 }
 
-.BakeryItem {
-  
+img {
+  width: 20rem;
+}
+#items {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#cart {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cart-header {
+    margin: 1px;
+}
+
+.description {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.bakery-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bakery-item:hover{
+    background-color: rgb(178, 221, 249);
+}
+
+li {
+    margin-bottom: 5px;
 }
